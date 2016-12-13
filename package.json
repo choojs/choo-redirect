@@ -1,0 +1,27 @@
+{
+  "name": "choo-redirect",
+  "version": "1.0.0",
+  "description": "Redirect a view to another view",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/choo-redirect",
+  "keywords": [
+    "redirect",
+    "choo",
+    "view",
+    "bel",
+    "framework"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  }
+}
