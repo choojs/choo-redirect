@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "choo": "^5.4.0",
     "dependency-check": "^2.6.0",
     "istanbul": "^0.4.5",
     "standard": "^8.6.0",

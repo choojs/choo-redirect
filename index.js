@@ -10,8 +10,8 @@ function redirect (url, rootSelector) {
   assert.equal(typeof url, 'string')
   assert.equal(typeof rootSelector, 'string')
 
-  return function redirectView (state, prev, send) {
-    send('location:set', url)
+  return function redirectView (state, emit) {
+    emit('pushState', url)
 
     // return the exact same tree that's being rendered right now so nothing is
     // changed :tada:
