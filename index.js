@@ -11,7 +11,7 @@ function redirect (url, rootSelector) {
   assert.equal(typeof rootSelector, 'string')
 
   return function redirectView (state, emit) {
-    emit('pushState', url)
+    emit('replaceState', url)
 
     // return the exact same tree that's being rendered right now so nothing is
     // changed :tada:
