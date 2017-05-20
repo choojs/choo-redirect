@@ -7,17 +7,15 @@ Redirect a view to another view.
 ## Usage
 ```js
 var redirect = require('choo-redirect')
-var mount = require('choo/mount')
 var html = require('choo/html')
 var choo = require('choo')
 
 var app = choo()
-app.router([
-  ['/', redirect('/welcome')],
-  ['/welcome', welcomeView]
-])
 
-mount('body', app.start)
+app.route('/', redirect('/welcome'))
+app.route('/welcome', welcomeView)
+
+app.mount('body')
 
 function welcomeView () {
   return html`
