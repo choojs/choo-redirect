@@ -1,6 +1,6 @@
 {
   "name": "choo-redirect",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Redirect a view to another view",
   "main": "index.js",
   "scripts": {
